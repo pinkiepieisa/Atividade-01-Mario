@@ -14,9 +14,24 @@
                     <br>
                     <small><b>Descrição: </b>{{descricao}}</small>
                     <br>
+
                     <!--Botão para editar tarefas-->
+                    <a href="/rota_tarefas/editar_tarefas/{{_id}}">
+                        <button class="btn btn-sucess mt-3">
+                            Editar tarefas
+                        </button>
+                    </a>
+
+                    <!--Botão para deletar tarefas-->
+                    <a href="/rota_tarefas/deletar_tarefas/{{_id}}">
+                        <button class="btn btn-danger mt-3">
+                            Deletar tarefas
+                        </button>
+                    </a>
+
                 </div>
             </div>
+            {{/each}}
         </div>
     </div>
 </main>
